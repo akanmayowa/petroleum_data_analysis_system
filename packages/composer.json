@@ -1,0 +1,19 @@
+{
+    "name": "firstvendor/firstpackage",
+    "description": "Sample Package , My frist package",
+    "type": "composer-plugin",
+    "require": {  },
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Olorunda Olaoluwa",
+            "email": "olaoluwa@snapnet.com.ng"
+        }
+    ],
+    "minimum-stability": "beta",
+    "autoload": {
+        "psr-4": {
+            "MyVendor\\contactform\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,44 @@
+
+<table>
+	<thead>
+		<tr>
+			<th>Year</th>
+			<th>Stream</th>
+			<th>January</th>
+            <th>February</th>
+            <th>March</th>
+            <th>April</th>
+            <th>May</th>
+            <th>June</th>
+            <th>July</th>
+            <th>August</th>
+            <th>September</th>
+            <th>October</th>
+            <th>November</th>
+            <th>December</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		@if($data)
+			@foreach($data as $detail)
+				<tr>
+					<td>{{$detail->year}}</td>
+					<td>{{$detail->stream?$detail->stream->stream_name:''}}</td>
+					<th>{{$detail->january}}</th>
+                    <th>{{$detail->febuary}}</th>
+                    <th>{{$detail->march}}</th>
+                    <th>{{$detail->april}}</th> 
+                    <th>{{$detail->may}}</th>
+                    <th>{{$detail->june}}</th>
+                    <th>{{$detail->july}}</th>
+                    <th>{{$detail->august}}</th>
+                    <th>{{$detail->september}}</th>
+                    <th>{{$detail->october}}</th>
+                    <th>{{$detail->november}}</th>
+                    <th>{{$detail->december}}</th>
+				</tr>
+			@endforeach
+		@endif		
+	</tbody>
+</table>
